@@ -1,7 +1,7 @@
-<h1>Create Article</h1>
+<h2>Edit Article</h2>
 
 <% if @article.errors.any? %>
-	<h2>The following events prevented the article from getting created</h2>
+	<h2>The following events prevented the article from getting updated</h2>
 	<ul>
 		<%@article.errors.full_messages.each do |msg| %>
 			<li><%= msg %></li> 
@@ -24,3 +24,4 @@
 <% end %>
 
 <%= link_to "Back to list", articles_path %>
+
